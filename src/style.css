@@ -151,7 +151,7 @@ body {
 /* headings */
 .split h2 {
   font-size: 2.3rem;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 /* paragraph */
@@ -167,7 +167,9 @@ body {
   height: 420px;
 
   /* 🔥 MODEL POSITION CONTROL */
-  transform: translateX(-150px); /* +ve = right, -ve = left */
+  transform: translateX(-50px); /* +ve = right, -ve = left */
+transform: translateY(50px); /* +ve = right, -ve = left */
+
 }
 
 
@@ -334,7 +336,7 @@ body {
 }
 /* ================= CONTACT ================= */
 .contact-section {
-  padding: 120px 10%;
+  padding: 80px 10%;
   text-align: center;
 
   /* 🔥 Floating CTA */
@@ -352,20 +354,52 @@ body {
     );
 }
 
-/* XR Headset SVG */
-.xr-bg-svg {
-  position: absolute;
-  right: -120px;
-  bottom: -80px;
-  width: 700px;
-  opacity: 0.08;
-  filter: drop-shadow(0 0 40px rgba(0,191,255,0.35));
-  animation: floatXR 10s ease-in-out infinite;
-  z-index: 0;
-  pointer-events: none;
+/* ================= XR SVG (ONLY JET & HELI) ================= */
+
+/* sirf jet + heli sections */
+.split {
+  position: relative;
+  overflow: hidden;
 }
 
-@keyframes floatXR {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-30px); }
+/* XR Headset SVG background */
+.split::before {
+  content: "";
+  position: absolute;
+
+  /* pure section ke andar rahe */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 900px;
+  height: 100%;
+
+  background-image: url("/vr-headset-outline.svg");
+  background-repeat: no-repeat;
+
+  /* 🔥 YAHI CONTROL POINT HAI */
+  background-position: center -190px; 
+  /* ↑ number badhao = niche
+     ↓ number ghatao = upar */
+
+  background-size: 900px auto;
+
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* content hamesha upar rahe */
+.split-left,
+.split-right {
+  position: relative;
+  z-index: 2;
+}
+/* Discord */
+.icon-btn.discord {
+  color: #5865f2; /* Discord brand color */
+}
+.contact-actions {
+  margin-top: 40px; /* 👈 value badhao = aur niche */
 }
