@@ -1,0 +1,55 @@
+<svg
+  width="800"
+  height="500"
+  viewBox="0 0 800 500"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    x="100"
+    y="170"
+    width="600"
+    height="200"
+    rx="80"
+    stroke="#00bfff"
+    stroke-width="8"
+  />
+
+  <rect
+    x="190"
+    y="220"
+    width="160"
+    height="100"
+    rx="30"
+    stroke="#00bfff"
+    stroke-width="6"
+  />
+
+  <rect
+    x="450"
+    y="220"
+    width="160"
+    height="100"
+    rx="30"
+    stroke="#00bfff"
+    stroke-width="6"
+  />
+
+  <line
+    x1="400"
+    y1="220"
+    x2="400"
+    y2="320"
+    stroke="#00bfff"
+    stroke-width="4"
+    opacity="0.6"
+  />
+
+  <path
+    d="M250 170 C300 100, 500 100, 550 170"
+    stroke="#00bfff"
+    stroke-width="6"
+    fill="none"
+    opacity="0.5"
+  />
+</svg>
